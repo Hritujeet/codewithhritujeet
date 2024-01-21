@@ -1,0 +1,98 @@
+{% extends "../base.html" %}
+{% block aboutactive %}active{% endblock aboutactive %}
+{% block title %}About Us - Our Story | CodeWithHritujeet{% endblock title %}
+{% block body %}
+{% load static %}
+<main class="my-5">
+    <section class="py-8 bg-white">
+        <div class="container my-lg-4">
+            <div class="row">
+                <div class="offset-lg-2 col-lg-8 col-md-12 col-12 mb-8">
+                    <!-- caption-->
+                    <h1 class="display-2 fw-bold mb-3">
+                        Hey there, it's Hritujeet from 
+                        <span class="text-primary">CodeWithHritujeet</span>
+                    </h1>
+                    <p class="mb-0 text-body fs-6">
+                      I am a teenager who's been into coding since 2020. I started off with python and django, ended up with javascript and cureently I have been playing around with NextJS. Built with Django and MongoDB, CodeWithHritujeet is my attempt to teach coding and share my blogs to all the aspiring coders.
+                    </p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    <!-- features -->
+    <section class="py-8">
+        <div class="container my-lg-8">
+            <div class="row">
+                <div class="col-lg-6 col-md-8 col-12 mb-6">
+                    <!-- caption -->
+                    <h2 class="display-4 mb-3 fw-bold">Our core values</h2>
+                    <p class="lead">CodeWithHritujeet is created with the intention to provide aspiring coders a world made especially for them. Learn Coding, read blogs to boost your productivity and know about new skills. Enjoy this world. It's truly <strong>A Heaven for Coders</strong></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-12">
+                    <!-- card -->
+                    <div class="card mb-4 mb-lg-0">
+                        <!-- card body -->
+                        <div class="card-body p-5">
+                            <!-- icon -->
+                            <div class="mb-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-mortarboard text-primary" viewBox="0 0 16 16">
+                                    <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5ZM8 8.46 1.758 5.965 8 3.052l6.242 2.913L8 8.46Z"></path>
+                                    <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Zm-.068 1.873.22-.748 3.496 1.311a.5.5 0 0 0 .352 0l3.496-1.311.22.748L8 12.46l-3.892-1.556Z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="mb-2">Make Education Free</h3>
+                            <p class="mb-0">We provide free courses with quality and premium content for everyone. Login and start accessing courses</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12 my-3">
+                    <!-- card -->
+                    <div class="card mb-4 mb-lg-0">
+                        <!-- card body -->
+                        <div class="card-body p-5">
+                            <!-- icon -->
+                            <div class="mb-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-graph-up-arrow text-primary" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M0 0h1v15h15v1H0V0Zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5Z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="mb-2">Quality Blogs</h3>
+                            <p class="mb-0">Our blogs contain quality content to boost your productivity and refresh your mind.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Team -->
+    <!-- cta -->
+    <section class="bg-primary px-4">
+        <div class="container">
+            <!-- row -->
+            <div class="row align-items-center g-0">
+                <div class="col-xl-6 col-lg-6 col-md-12">
+                    <!-- heading -->
+                    <div class="pt-6 pt-lg-0">
+                        <h1 class="text-white display-4 fw-bold pe-lg-8 px-2">Join the CodeWithHritujeet team &amp; shape your future</h1>
+                        <!-- text -->
+                        <p class="text-white-50 mb-4 lead">
+                            If you’re passionate and ready to dive in, we’d love to help you. This truly is <strong>a Heaven for Coders</strong>
+                        </p>
+                        <!-- btn -->
+                        <a href="/courses" class="btn btn-dark">View Courses</a>
+                        <a href="/blog" class="btn btn-dark">View Blogs</a>
+                    </div>
+                </div>
+                <!-- img -->
+                <div class="col-xl-6 col-lg-6 col-md-12 text-lg-end text-center pt-6">
+                    <img src="{% static "img/coding.jpg" %}" alt="heroimg" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock body %}

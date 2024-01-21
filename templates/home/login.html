@@ -1,0 +1,54 @@
+{% extends "../base.html" %} {% block title %}Login in to CodeWithHritujeet{% endblock title %}
+{% block body %}
+{% load static %}
+
+<main>
+    <section class="container d-flex flex-column my-5" style='height: 60vh;'>
+        <div class="row align-items-center justify-content-center g-0 h-lg-100 py-8">
+            <div class="col-lg-5 col-md-8 py-8 py-xl-0">
+                <!-- Card -->
+                <div class="card shadow">
+                    <!-- Card body -->
+                    <div class="card-body p-6">
+                        <div class="mb-4">
+                            <h1 class="mb-1 fw-bold">Log in</h1>
+                            <span>
+                                Don’t have an account?
+                                <a href="/signup" class="ms-1">Log in </a>
+                            </span>
+                        </div>
+                        <!-- Form -->
+                        <form class="needs-validation" method="post" action="/login">
+                            {% csrf_token %}
+                            <!-- Username -->
+                            <div class="mb-3">
+                                <label for="text" class="form-label">Username</label>
+                                <input type="text" id="text" class="form-control" name="username" placeholder="text address here" required="" fdprocessedid="7uvyi">
+                                <div class="invalid-feedback">Please enter valid username.</div>
+                            </div>
+                            <!-- Password -->
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Password</label>
+                                <input type="password" id="password" class="form-control" name="password" placeholder="**************" required="" fdprocessedid="ja1ix">
+                                <div class="invalid-feedback">Please enter valid password.</div>
+                            </div>
+                            <!-- Checkbox -->
+                            <div class="d-lg-flex justify-content-between align-items-center mb-4">
+                                <div class="form-check">
+                                    <div class="invalid-feedback">We will never share your details with anyone.</div>
+                                </div>
+                            </div>
+                            <div>
+                                <!-- Button -->
+                                <div class="d-grid">
+                                    <button type="submit" class="btn btn-primary" fdprocessedid="py36sxa">Log in</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock body %}

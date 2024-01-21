@@ -1,0 +1,3 @@
+Home - User management, Contact page, about page, home page
+Blog - All blogs, comments
+Courses - Text-based tutorials

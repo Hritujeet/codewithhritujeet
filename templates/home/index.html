@@ -1,0 +1,64 @@
+{% extends "../base.html" %}
+{% block homeactive %}active{% endblock homeactive %}
+{% block title %}CodeWithHritujeet - Learn Programming and Read Blogs{% endblock title %}
+{% block body %}
+
+{% load static %}
+<section class="container py-lg-8 py-5" data-cue="fadeIn" data-show="true" style="animation-name: fadeIn; animation-duration: 600ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both;">
+  <div class="row justify-content-center">
+     <div class="col-xl-8 col-lg-10 col-12" data-cues="zoomIn" data-group="page-title" data-delay="700" data-disabled="true">
+        <div class="text-center d-flex flex-column gap-5" data-cue="zoomIn" data-group="page-title" data-delay="700" data-show="true" style="animation-name: zoomIn; animation-duration: 600ms; animation-timing-function: ease; animation-delay: 700ms; animation-direction: normal; animation-fill-mode: both;">
+           <div class="d-flex justify-content-center">
+              <span class="bg-primary bg-opacity-10 text-primary border-primary border p-2 fs-6 rounded-pill lh-1 d-flex align-items-center">
+                 <span>Hey, {{request.user}} - Dive into the world of coding</span>
+              </span>
+           </div>
+           <div class="d-flex flex-column gap-3 mx-lg-8">
+              <h1 class="mb-0 fw-bolder display-5">Code with Hritujeet</h1>
+              <p class="mb-0 lead fw-semibold">Browse courses and find out the best course for you. Its free! Code With Hritujeet is my attempt to teach basics of programming and coding techniques to people.</p>
+           </div>
+           <div class="d-flex flex-row gap-2 justify-content-center">
+              <a href="/blog" class="btn btn-primary">Read Blogs</a>
+              <a href="/courses" class="btn btn-light">Explore Courses</a>
+           </div>
+        </div>
+     </div>
+  </div>
+</section>
+  <div class="container px-4 py-5">
+    <h2 class="pb-2 border-bottom">Explore a new World of Programming</h2>
+
+    <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
+      <div class="col d-flex flex-column align-items-start gap-2">
+        <h2 class="fw-bold text-body-emphasis">Heaven for Coders</h2>
+        <p class="text-body-secondary">Confused on which course to take? I have got you covered. Browse courses and find out the best course for you. Its free! Code With Harry is my attempt to teach basics and those coding techniques to people in short time which took me ages to learn.</p>
+        <a href="/about" class="btn btn-primary btn-lg">Know More About Us</a>
+      </div>
+
+      <div class="col">
+        <div class="row row-cols-1 row-cols-sm-2 g-4">
+          <div class="col d-flex flex-column gap-2">
+            <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+              <svg class="bi" width="1em" height="1em">
+                <use xlink:href="#collection"></use>
+              </svg>
+            </div>
+            <h4 class="fw-semibold mb-0 text-body-emphasis">Free Courses</h4>
+            <p class="text-body-secondary">Browse through amazing courses to learn programmming. It's truly a <strong>Heaven for Coders</strong></p>
+          </div>
+
+          <div class="col d-flex flex-column gap-2">
+            <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+              <svg class="bi" width="1em" height="1em">
+                <use xlink:href="#gear-fill"></use>
+              </svg>
+            </div>
+            <h4 class="fw-semibold mb-0 text-body-emphasis">Amazing Blogs</h4>
+            <p class="text-body-secondary">Help yourself with refreshing blogs. Explore a world made <strong>specially for coders!</strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endblock body %}
